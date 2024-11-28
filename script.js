@@ -92,3 +92,14 @@ function mostra(){
 }
 
 
+ // ------------------------------------------------------
+        function showAlert(message) {
+          const alertBox = document.getElementById('alert');
+          alertBox.textContent = message;
+          alertBox.style.display = 'block';
+    
+          setTimeout(() => {
+            alertBox.style.display = 'none';
+          }, 3000); // Fecha o alerta após 3 segundos
+        }
+      
