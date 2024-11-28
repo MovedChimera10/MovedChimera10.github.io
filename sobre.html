@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header> 
+        
+        <nav>
+            <a href="index.html">Grupo</a>
+            <a href="Sobre.html">Sobre</a>
+            <a href="Contato.html">Contato</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+            <button onclick="increaseFontSize()">Aumentar Fonte</button>
+            <button onclick="diminuirFonte()">Diminuir Fonte</button>
+        </nav>
+    </header>
+
+    <main onclick="diminui()"></main>
+        
+
+
+         <section class="galeria-container">
+            <div class="card" onmouseover="mostraDetalhes(0)" onmouseleave="escondeDetalhes(0)">
+                <img src="img/Antonio2.jpeg" alt="Antonio card">
+                <h2>Antonio</h2>
+                <p class="detalhes">Aqui está um pouco das coisas que eu aprecio, sou um fã da cultura pop e por isso gosto muito de passar meu tempo nas horas vagas, assistindo anime e jogando vídeo game. Além do mais, também gosto de acompanhar o mundo da musica e de praticar atividade física, seja ela qual for.</p>
+            </div>
+
+
+            <div class="card" onmouseover="mostraDetalhes(1)" onmouseleave="escondeDetalhes(1)">
+                <img src="img/Yasmim2.jpeg" alt="Yasmim card">
+                <h2>Yasmim</h2>
+                <p class="detalhes">Nas minhas fotos eu coloquei uma banda que eu gosto muito, Chase Atlantic, a minha Casa do Filme Harry Potter que é a Sonserina, o jogo que eu mais jogo com meus amigos, Minecraft e um Hobbie que eu faço muito que é ler livros.</p>
+            </div>
+
+
+            <div class="card" onmouseover="mostraDetalhes(2)" onmouseleave="escondeDetalhes(2)">
+               
+                <img src="img/Matheus2.jpeg" alt="Matheus card">
+                <h2>Matheus</h2>
+                <p class="detalhes">Meus hobbies favoritos são a culinária sempre gostei muito de saber como era feito o preparo das comidas. Assistir animes. Na terceira foto tem um jogo chamado “Hogwarts Legacy” um jogo inspirado no filme “Harry Potter”. No último tem as apostas que além de um hobbie também é o meu trabalho hoje em dia e aonde passo grande parte do meu tempo.</p>
+                
+            </div>
+           
+
+         
+        </section>
+       
+        
+          
+    </section>
+
+    </main>
+
+    <footer>
+       
+        <p>&copy; 2024 Trabalho de Marlon.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

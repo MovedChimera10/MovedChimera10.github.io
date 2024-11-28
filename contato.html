@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .custom-alert {
+          position: fixed;
+          top: 250px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #5669a1;
+          color: white;
+          padding: 100px 100px;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          display: none;
+          z-index: 1000;
+        }
+      </style>
+
+
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="index.html">Grupo</a>
+            <a href="Sobre.html">Sobre</a>
+            <a href="Contato.html">Contato</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+            <button onclick="increaseFontSize()">Aumentar Fonte</button>
+            <button onclick="diminuirFonte()">Diminuir Fonte</button>
+        </nav>
+    </header>
+
+    <main class= "login">
+        <section>
+            <h2>Entre em Contato</h2>
+
+            <div class="form">
+             
+              <input type="text" id="nome" placeholder="Nome..." onkeyup="mostraAviso('primeiro')">
+              <p class="aviso"></p>
+              <input type="password" id="senha" placeholder="Senha..." onkeyup="mostraAviso('segundo')">
+              <p class="aviso"></p>
+              <input type="email" id="email" placeholder="Email..." onkeyup="mostraAviso('terceiro')">
+              <p class="aviso"></p>
+
+              <input type="button" value="Cadastrar" id="botao" onclick="mostra()">
+
+              <label for="message">Deixe aqui o que podemos melhorar no nosso site:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit" id="botaoenviar">Enviar</button>
+              </div>
+            
+          
+                
+              
+                
+                
+            </form>
+            <p id="messageFeedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trabalho de Marlon.</p>
+    </footer>
+    <script src="script.js" defer></script>
+
+     <div id="alert" class="custom-alert"></div>
+  
+
+
+
+    <script>
+        function showAlert(message) {
+          const alertBox = document.getElementById('alert');
+          alertBox.textContent = message;
+          alertBox.style.display = 'block';
+    
+          setTimeout(() => {
+            alertBox.style.display = 'none';
+          }, 3000); // Fecha o alerta após 3 segundos
+        }
+      </script>
+
+
+</body>
+</html>
