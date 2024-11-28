@@ -128,15 +128,6 @@ section{
     padding: 30px;
    
 }
-#carousel{
-    width: 350px;
-    height: 200px;
-}
-.carousel-container{
-    display: flex;
-    justify-content: center;
-}
-
 
 
 form {
@@ -267,7 +258,7 @@ textarea{
 }
 
 
-/*#botaoenviar{
+/* #botaoenviar{ 
     width: 200px;
     border-radius: 10px;
-    border: none;
+    border: none; */
