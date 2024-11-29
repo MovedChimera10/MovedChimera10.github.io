@@ -257,6 +257,29 @@ textarea{
     width: 500px;
 }
 
+/* alert personalizado-------------------------------------------------- */
+
+        .custom-alert {
+          position: fixed;
+          top: 250px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #5669a1;
+          color: white;
+          padding: 100px 100px;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          display: none;
+          z-index: 1000;
+        }
+   
+
+
+
+
+
+
+
 
 /* #botaoenviar{ 
     width: 200px;
